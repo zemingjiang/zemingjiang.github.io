@@ -6,14 +6,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(./sucai/beijing.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        #skills li {
+            list-style-type: " √ ";
+        }
+
+        .nihao {
+            font-size: 3em;
+            color: rgb(221, 43, 30);
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
-        <h1>我的个人主页</h1>
+        <h1 id="title">阮程的个人主页</h1>
         <nav>
             <ul>
-                <li><a href="#about">关于</a></li>
+                <li><a href="#about">关于我</a></li>
                 <li><a href="#experience">经历</a></li>
                 <li><a href="#education">教育</a></li>
                 <li><a href="#skills">技能</a></li>
@@ -24,32 +43,22 @@
     <main>
         <section id="about">
             <h2>关于我</h2>
-            <p>Hi, my name is John Doe. I am a web developer with 5 years of experience. I specialize in HTML, CSS, and
-                JavaScript. In my free time, I like to travel and take photos.</p>
+            <p><span
+                    class="nihao">你好</span>，欢迎来到我的个人主页。我是福建工程学院大数据专业的一名学生。虽然我的专业是理工类的，但是在业余时间，我也喜欢学习人文历史方面的知识。在未来的职业生涯中，我希望能够结合个人兴趣和专业技能，为所在的公司和社会做出更大的贡献，实现自己的人生价值。
+            </p>
         </section>
 
         <section id="experience">
             <h2>经历</h2>
             <ul>
                 <li>
-                    <h3>Web Developer, ABC Company</h3>
-                    <p>June 2018 - Present</p>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>Design and develop websites using HTML, CSS, and JavaScript</li>
-                        <li>Collaborate with team members to ensure project success</li>
-                        <li>Communicate with clients to gather project requirements</li>
-                    </ul>
+                    <h3>大一时，使用相关工具分析某学校的一卡通数据，归纳该校学生的特点。</h3>
+
                 </li>
 
                 <li>
-                    <h3>Intern, XYZ Company</h3>
-                    <p>January 2018 - May 2018</p>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>Assist web development team in designing and developing websites</li>
-                        <li>Learn about web development best practices</li>
-                    </ul>
+                    <h3>大二时，使用c#语言和SQL server工具开发图书管理系统</h3>
+
                 </li>
             </ul>
         </section>
@@ -58,8 +67,8 @@
             <h2>教育</h2>
             <ul>
                 <li>
-                    <h3>Bachelor's Degree in Computer Science, University of ABC</h3>
-                    <p>September 2014 - June 2018</p>
+                    <h3>福建工程学院本科生在读</h3>
+                    <p>2021 年- 至今</p>
                 </li>
             </ul>
         </section>
@@ -69,10 +78,9 @@
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li>React</li>
+                <li>Java</li>
+                <li>python</li>
+                <li>SQL</li>
             </ul>
         </section>
     </main>
@@ -81,6 +89,7 @@
         我的学校介绍：
         <a href="https://www.fjut.edu.cn/main.htm">点击这里</a>
     </p>
+    <a href="#title">返回上级</a>
 
     <footer>
         <p>&copy; 2023 My Personal Website</p>
